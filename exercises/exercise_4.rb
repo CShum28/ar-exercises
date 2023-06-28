@@ -13,6 +13,10 @@ six = Store.create(name: 'Yaletown', annual_revenue: 430000, mens_apparel: true,
 @mens_stores = Store.where("mens_apparel = true")
 puts @mens_stores
 
+@store4 = Store.find(4)
+@store5 = Store.find(5)
+@store6 = Store.find(6)
+
 @mens_stores.each do |store|
   puts store.name
   puts store.annual_revenue
